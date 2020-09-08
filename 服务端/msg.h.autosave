@@ -1,0 +1,33 @@
+﻿#ifndef MSG_H
+#define MSG_H
+#include<QString>
+
+class msg:public QString{
+public:
+    msg();
+    ~msg();
+    int msg_type;
+    QString user_name;
+    QString password;
+    QString result;
+    int user_id;
+    int pokemon_id;
+    
+};
+
+class pokemon_msg{
+public:
+    pokemon_msg();
+    ~pokemon_msg();
+    int pokemon_id;
+    int att;
+    int def;
+    int HP;
+    int spe;
+    int pro;
+    int type;
+    int exp;
+    int level;
+};
+
+#endif // MSG_H
